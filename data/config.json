@@ -1,0 +1,77 @@
+{
+    "output_dir": "out",
+    "input_file": "data/input.json",
+    "wheel_diameter": 4,
+    "ports": {
+        "drive": {
+            "type": "x-drive",
+            "default_motor_power": 100,
+            "config": {
+                "wheel_circumference": 319.19,
+                "wheel_size": 4,
+                "track_width": 295,
+                "wheelbase": 40,
+                "gear_ratio": 1
+            },
+            "front": {
+                "left": {
+                    "port": 1,
+                    "reverse": false,
+                    "gear": "18:1"
+                },
+                "right": {
+                    "port": 2,
+                    "reverse": true,
+                    "gear": "18:1"
+                }
+            },
+            "back": {
+                "left": {
+                    "port": 3,
+                    "reverse": false,
+                    "gear": "18:1"
+                },
+                "right": {
+                    "port": 4,
+                    "reverse": true,
+                    "gear": "18:1"
+                }
+            },
+            "left": {
+                "port": 1,
+                "reverse": false,
+                "gear": "18:1"
+            },
+            "right": {
+                "port": 2,
+                "reverse": true,
+                "gear": "18:1"
+            }
+        },
+        "always_running": [
+            {
+                "port": 5,
+                "reverse": false,
+                "gear": "18:1"
+            },
+            {
+                "port": 6,
+                "reverse": false,
+                "gear": "18:1"
+            },
+            {
+                "port": 9,
+                "reverse": true,
+                "gear": "18:1"
+            }
+        ],
+        "motors": [
+            {
+                "name": "shooter",
+                "port": 12,
+                "reverse": false,
+                "gear": "18:1"
+            }
+        ]
+    }
+}

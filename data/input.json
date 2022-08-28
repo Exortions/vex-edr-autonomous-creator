@@ -1,0 +1,11 @@
+{
+    "code": [
+        { "action": "move", "value": 100 },
+        { "action": "turn", "value": 90, "args": [ "right" ] },
+        { "action": "move", "value": 100 },
+        { "action": "wait", "value": 100 },
+        { "action": "turn", "value": 90, "args": [ "right" ] },
+        { "action": "move", "value": 100 },
+        { "action": "run_motor", "value": 100, "args": [ "shooter", 100 ] }
+    ]
+}
